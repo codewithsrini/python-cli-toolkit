@@ -23,7 +23,7 @@ def search_locations(city: str, count: int = 5) -> list[Location]:
     results = data.get("results", [])
 
     if not results:
-        raise LocationNotFoundError(f"No place found matching for '{city}'.")
+        raise LocationNotFoundError(f"No place found matching '{city}'.")
 
     # print(json.dumps(results, indent=4))
 
