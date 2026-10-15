@@ -4,6 +4,6 @@ class SkyError(Exception):
 class LocationNotFoundError(SkyError):
     """The city name didn't match any place"""
 
-class WeatherSercviceError(SkyError):
+class WeatherServiceError(SkyError):
     """The API was unreachable, slow or returned an error."""
 

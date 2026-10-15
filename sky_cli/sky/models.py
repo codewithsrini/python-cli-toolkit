@@ -38,7 +38,7 @@ class CurrentWeather:
     def from_api(cls, data: dict) -> "CurrentWeather":
         return cls(
             temperature=data["temperature_2m"],
-            feels_like=data["aparent_temperature"],
+            feels_like=data["apparent_temperature"],
             humidity=data["relative_humidity_2m"],
             wind_speed=data["wind_speed_10m"],
             weather_code=data["weather_code"],
